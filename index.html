@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Cyber Defense - Network Health Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="header-title">
+            <span>🛡️</span>
+            <h1>NATIONAL CYBER INFRASTRUCTURE — NETWORK HEALTH MONITOR</h1>
+        </div>
+        
+        <div class="section">
+            <h2>SYSTEM TELEMETRY STATUS</h2>
+            <div class="system-status-box">
+                <span class="dot green"></span> 
+                <span class="status-text-green">GATEWAY OPERATIONAL — SECURE UPLINK ESTABLISHED</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>CONNECTED NODES & IP ADDRESS REGISTRY</h2>
+            <table class="device-table">
+                <thead>
+                    <tr>
+                        <th class="device-col">Node Identifier</th>
+                        <th class="type-col">Category</th>
+                        <th class="ip-col">IP Address</th>
+                        <th class="mac-col">MAC Address</th>
+                        <th class="bw-col">Traffic</th>
+                        <th class="status-col">Security Status</th>
+                    </tr>
+                </thead>
+                <tbody id="device-table-body">
+                    <!-- Populated via script.js -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>THREAT INTELLIGENCE & MITIGATION DIRECTIVE</h2>
+            <div class="threat-box">
+                <div class="threat-info">
+                    <span>Threat Level Assessment:</span>
+                    <span class="risk-high">HIGH (Unauthorized Probe Detected)</span>
+                </div>
+                <div class="risk-bar-container">
+                    <div class="risk-segment seg-green"></div>
+                    <div class="risk-segment seg-yellow"></div>
+                    <div class="risk-segment seg-red"></div>
+                </div>
+                <div class="threat-info">
+                    <span>Protocol Vector: Lateral Movement Risk (MITRE T1021)</span>
+                    <span class="suggest-action">[ EXECUTE PROTOCOL: ISOLATE VULNERABLE NODES ]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
